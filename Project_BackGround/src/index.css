@@ -1,0 +1,549 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* hihi */
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.header {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-logo {
+  flex: 0 0 auto;
+}
+
+.hihi li{
+  padding-top: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header-search {
+  flex: 1;
+  border-radius: 10px;
+}
+
+.search-input {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius:104px;
+  font-size: 1rem;
+  -webkit-border-radius:104px;
+  -moz-border-radius:104px;
+  -ms-border-radius:104px;
+  -o-border-radius:104px;
+}
+
+.header-nav {
+  flex: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #e91e63;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.recipe-box {
+  background-color: #f99ab2;
+  color:  #920629;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute; 
+  left: 0.5rem; 
+  color: #666; 
+  pointer-events: none; /* Ngăn icon cản trở sự kiện chuột trên input */
+  top: 10px;
+}
+
+.bi-search {
+  display: inline-block; 
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 2rem; 
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box; 
+}
+
+
+.search-input::placeholder {
+  padding-left: 0.2rem; 
+  color: #999; 
+}
+
+/*  placeholder không bị che bởi icon */
+.search-input:focus {
+  outline: none;
+  border-color: #e91e63; /* Màu viền khi focus */
+}
+
+.recipe-card {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.recipe-left-column, .recipe-right-column {
+  flex: 1;
+}
+
+.recipe-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.recipe-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.recipe-author {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bordered-section {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.author-details {
+  width: 100%;
+}
+
+.author-details p {
+  /* margin: 0 0 0.5rem 0; */
+  font-size: 1.2rem;
+  color: #333;
+  margin-left: -6px;
+}
+
+.author-metrics {
+  display: flex;
+  /* Hiển thị theo cột */
+  /* flex-direction: column; */
+  gap: 5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #666;
+  margin-top: 4rem;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.2rem; 
+}
+
+.metric-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.metric-value {
+  margin-left: 0.5rem; 
+  color: #666;
+  display: block; /* Đảm bảo giá trị hiển thị trên dòng riêng */
+}
+
+.rating {
+  color: #e91e63;
+  font-size: 1rem;
+}
+
+.recipe-ingredients {
+  margin-bottom: 1rem;
+}
+
+.dashed-border {
+  border: 2px dashed #ff80ab;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.recipe-ingredients h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.recipe-ingredients li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.add-to-list {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  margin-top: 50px;
+  display: flex;
+  margin-left: 140px;
+  justify-content: center;
+}
+
+.add-to-list:hover {
+  background-color: #d81b60;
+}
+
+.recipe-steps {
+  margin-bottom: 1rem;
+}
+
+.recipe-steps h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-steps ol {
+  padding-left: 1.5rem;
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+ 
+ /* .recipe-images-grid {
+    /* display: flex;
+    flex-direction: column; */
+    /* gap: 1rem; */
+  }  */
+
+.steps-and-image {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.image-item {
+  flex: 1;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+/* 
+.recipe-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.recipe-image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+} */
+.recipe-info {
+  flex: 1;
+}
+.recipe-left-column, .recipe-right-column {
+  flex: 1;
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+/* .footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+} */
+/* ... (giữ nguyên các phần CSS cũ không liên quan) ... */
+
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex; /* Sử dụng flex để hiển thị các phần trên cùng một hàng */
+  justify-content: space-between; /* Phân bố đều khoảng cách giữa các phần */
+  gap: 2rem; /* Khoảng cách giữa các cột */
+  flex-wrap: wrap; 
+  
+}
+
+.footer-about, .footer-links, .hihi {
+  flex: 1; /* Chia đều chiều rộng cho các cột */
+  min-width: 250px; /* Đảm bảo mỗi cột có chiều rộng tối thiểu */
+}
+
+.footer-about h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.footer-subscribe {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.subscribe-input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.subscribe-button {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #d81b60;
+}
+
+.footer-links {
+  display: flex; 
+  
+  margin-left: 70px;
+  gap: 1rem; 
+}
+
+.footer-links > div {
+  flex: 1; /* Chia đều chiều cao cho "Learn More" và "Recipes" */
+}
+
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #e91e63;
+}
+
+.footer-bottom {
+  display: flex;
+  text-align: left;
+  margin-top: -5rem;
+  padding-top: -1rem;
+
+  /* border-top: 1px solid #ddd; */
+}
+
+/* .footer-bottom p{
+  position: absolute;
+  top: -10px;
+} */
+
+.footer-logo {
+  width: 20px;
+  height: 20px;
+  
+  margin-bottom: 0.5rem;
+}
