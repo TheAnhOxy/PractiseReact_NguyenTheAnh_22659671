@@ -1,0 +1,18 @@
+
+.header-navbar {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link-custom {
+    color: #ffffff !important;
+    font-weight: 500;
+    padding: 10px 20px !important;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link-custom:hover {
+    color: #ffd700 !important; /* Vàng nhạt khi hover */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }

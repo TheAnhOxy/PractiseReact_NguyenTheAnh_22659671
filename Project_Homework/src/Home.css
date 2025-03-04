@@ -1,0 +1,13 @@
+/* src/pages/Home.css */
+.home-page h1 {
+    color: #2a5298;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tours-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
