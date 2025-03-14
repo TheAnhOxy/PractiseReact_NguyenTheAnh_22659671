@@ -1,0 +1,251 @@
+/* Repi.css */
+
+/* General Page Styling */
+.subscribe-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Breadcrumb Styling */
+  .subscribe-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-breadcrumb-link {
+    color: #ff4081;
+    text-decoration: none;
+  }
+  
+  .subscribe-breadcrumb-separator {
+    margin: 0 5px;
+  }
+  
+  .subscribe-breadcrumb-current {
+    color: #333;
+  }
+  
+  /* Main Content Styling */
+  .subscribe-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .subscribe-text {
+    flex: 1;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subscribe-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .subscribe-subtitle {
+    font-size: 20px;
+    color: #ff4081;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-benefits li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    gap: 2rem;
+  }
+  
+  .subscribe-checkmark {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .subscribe-price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .subscribe-price-unit {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .subscribe-billing-info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-now-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 430px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+  
+  .subscribe-now-btn:hover {
+    background-color: #e91e63;
+  }
+  
+  .subscribe-btn-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .subscribe-cancel-info {
+    font-size: 14px;
+    color: #ff4081;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .subscribe-image {
+    flex: 1;
+  }
+  
+  .subscribe-dish-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Footer Section Styling */
+  .subscribe-footer {
+    text-align: center;
+  }
+  
+  .subscribe-footer-title {
+    font-size: 24px;
+    color: #ff4081;
+    margin-bottom: 40px;
+  }
+  
+  .subscribe-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .subscribe-footer-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subscribe-footer-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .subscribe-footer-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Cheffy Cooking Only Section */
+  .subscribe-cheffy-section {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .subscribe-cheffy-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+  }
+  
+  .subscribe-cheffy-logo img {
+    /* width: 30px;
+    height: 30px; */
+    min-width: none;
+    margin-right: 10px;
+    object-fit: contain;
+  }
+  
+  .subscribe-cheffy-logo span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .subscribe-cheffy-title {
+    font-size: 24px;
+    color: #ff4081;
+    margin-bottom: 10px;
+  }
+  
+  .subscribe-cheffy-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+
+  .subscribe-option {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid red;
+    padding: 0.5rem 0.5rem;
+    width: 26%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .subscribe-option input {
+    flex-shrink: 0;
+    display: none;
+    
+  }
+  
+  .subscribe-radio {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }

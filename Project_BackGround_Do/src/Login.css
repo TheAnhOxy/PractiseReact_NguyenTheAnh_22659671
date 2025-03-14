@@ -1,0 +1,750 @@
+/* Overlay */
+.chefLoginModal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark shadow background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Container */
+  .chefLoginModal-container {
+    position: relative;
+    display: flex;
+    width: 950px; /* Adjust based on your design */
+    height: 500px; /* Adjust based on your design */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+  }
+  
+  /* Close Button */
+  .chefLoginModal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  /* Left Section */
+  .chefLoginModal-left {
+    flex: 0 0 40%;
+    position: relative;
+    background-color: #e6f0fa; /* Light blue background */
+  }
+  
+  .chefLoginModal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-right: 100px;
+    opacity: 1.5; /* Slight opacity to make the quote readable */
+  }
+  
+  .chefLoginModal-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Right Section */
+  .chefLoginModal-right {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    margin-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  
+  .chefLoginModal-title {
+    display: flex;
+    justify-content: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .chefLoginModal-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .chefLoginModal-email-input {
+    width: 95%;
+    padding: 10px;
+    /*border-radius: 6px solid #ccc;
+    */border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+  
+  .chefLoginModal-continue-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff4d94;
+    /*Pinkcolormatchingyourdesign*/color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .chefLoginModal-continue-btn:hover {
+    background-color: #e04385;
+  }
+  
+  .chefLoginModal-terms {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chefLoginModal-terms a {
+    color: #ff4d94;
+    text-decoration: none;
+  }
+  
+  .chefLoginModal-terms a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Divider */
+  .chefLoginModal-divider {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .chefLoginModal-divider::before,
+  .chefLoginModal-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .chefLoginModal-divider::before {
+    left: 0;
+  }
+  
+  .chefLoginModal-divider::after {
+    right: 0;
+  }
+  
+  .chefLoginModal-divider span {
+    background-color: white;
+    padding: 0 10px;
+  }
+  
+  /* Social Buttons */
+  .chefLoginModal-social-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(237, 246, 250);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  
+  .chefLoginModal-icon {
+    margin-right: 10px;
+  }
+  
+  .chefLoginModal-social-btn:hover {
+    background-color: #f5f5f5;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* outline-color: #920629; */
+  }
+  
+  .recipe-box {
+    background-color: #f99ab2;
+    color:  #920629;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .check_anh{
+    vertical-align: middle;
+  }
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  
+  .recipe-box:hover {
+    text-decoration: underline;
+  }
+  .no-results-layout {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 70vh;
+  }
+  
+  .filters-section {
+    flex: 0 0 30%;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .filters-section h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .filter-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .filter-title::after {
+    content: '▼';
+    font-size: 0.8rem;
+    color: #ff4d94;
+    transition: transform 0.3s;
+  }
+  
+  .filter-title.active::after {
+    transform: rotate(180deg);
+  }
+  
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .checkbox-grid label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-grid input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .checkbox-grid input[type="checkbox"]:checked + span {
+    color: #ff4d94;
+  }
+  
+  .range-container {
+    position: relative;
+  }
+  
+  .range-container span {
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .rating-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .rating-options label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating-options input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .rating-star {
+    width: 150px;
+    vertical-align: middle;
+  }
+  
+  .apply-button {
+    background-color: #ff4d94;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .apply-button:hover {
+    background-color: #e04385;
+  }
+  
+  .results-section {
+    flex: 0 0 70%;
+    padding-left: 2rem;
+  }
+  
+  .results-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .product-image{
+    display: flex;
+    min-width: 200px;
+    object-fit: contain;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.1rem;
+    font-size: 30px;
+    text : bold;
+    margin-left: 10px;
+    background-color: #fff;
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #333;
+  }
+  
+  .product-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .button-icon button:active,
+  button:focus {
+    border: none;
+    outline: none;
+  }
+  
+  
+  .product-time {
+    font-size: 0.9rem;
+    color: #ff4d94;
+    display: flex
+  }
+  
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.page-button {
+  background-color: #fff;
+  border: 1px solid #ff4d94;
+  color: #ff4d94;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.page-button.active {
+  background-color: #ff4d94;
+  color: #fff;
+}
+
+.page-button:hover {
+  background-color: #e04385;
+  color: #fff;
+}
+
+.pagination-ellipsis {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+  .page-button {
+    background-color: #fff;
+    border: 1px solid #ff4d94;
+    color: #ff4d94;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .page-button.active {
+    background-color: #ff4d94;
+    color: #fff;
+  }
+  
+  .page-button:hover {
+    background-color: #e04385;
+    color: #fff;
+  }
+  
+  .no-results-main {
+    flex: 0 0 70%;
+    text-align: center;
+    padding-left: 2rem;
+  }
+  
+  .no-results-image {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+  
+  .no-results-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .no-results-message {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .no-results-suggestions {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .suggestion {
+    background-color: #f9e0e6;
+    color: #920629;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    margin: 0.25rem;
+  }
+
+
+
+  /* check */
+
+  /* ... (Giữ nguyên các style cũ) ... */
+
+/* Your Recipe Box Styles */
+.your-recipe-box {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+
+}
+
+.recipe-box-content {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-right: 360px;
+}
+
+.user-info h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  margin-right: 19rem;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ffe6f0;
+  flex-shrink: 0;
+}
+
+.user-description {
+  text-align: left;
+  max-width: 600px;
+  flex: 1;
+}
+
+.user-description p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  /* white-space: nowrap; */
+}
+
+.user-stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.subscribe-btn, .share-btn {
+  background-color: #ff4d94;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  gap: 0.6rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.share-btn {
+  background-color: #fff;
+  color: #ff4d94;
+  border: 1px solid #ff4d94;
+}
+
+.recipe-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-left: 35px;
+  margin-bottom: 2rem;
+}
+
+.tab-btn {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tab-btn.active {
+  background-color: #ff4d94;
+  color: #fff;
+  border-color: #ff4d94;
+}
+
+.recipe-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.recipe-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 70%;
+}
+
+.recipe-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bookmark-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.recipe-time {
+  font-size: 0.9rem;
+  color: #ff4d94;
+  display: block;
+}
+
+.recipe-time1 {
+  font-size: 0.9rem;
+  color: #ff4d94;
+  display: block;
+  margin-right: 10px;
+}
+
+/* Pagination (đã có, giữ nguyên) */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.page-button {
+  background-color: #fff;
+  border: 1px solid #ff4d94;
+  color: #ff4d94;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.page-button.active {
+  background-color: #ff4d94;
+  color: #fff;
+}
+
+.page-button:hover {
+  background-color: #e04385;
+  color: #fff;
+}
+
+.pagination-ellipsis {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Thêm style cho breadcrumb */
+.breadcrumb {
+  margin-bottom: 1rem;
+  margin-right: 40rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb-link {
+  color: #ff4d94;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 0.5rem;
+  color: #666;
+}
+
+.breadcrumb-current {
+  color: #666;
+}
