@@ -1,17 +1,15 @@
 import React from 'react';
-import '../Repi.css'; // Import the CSS file for styling
+import '../Repi.css';
 
 const Subscribe = () => {
   return (
     <div className="subscribe-page">
-      {/* Breadcrumb */}
       <nav className="subscribe-breadcrumb">
         <a href="/recipes" className="subscribe-breadcrumb-link">Recipes</a>
         <span className="subscribe-breadcrumb-separator">  </span>
         <span className="subscribe-breadcrumb-current">Subscribe</span>
       </nav>
 
-      {/* Main Subscription Section */}
       <div className="subscribe-content">
         <div className="subscribe-text">
           <h1 className="subscribe-title">
@@ -55,7 +53,6 @@ const Subscribe = () => {
         </div>
       </div>
 
-      {/* Footer Section */}
       <div className="subscribe-footer">
         <h2 className="subscribe-footer-title">AN ALL ACCESS SUBSCRIPTION INCLUDES</h2>
         <div className="subscribe-footer-grid">
@@ -77,7 +74,6 @@ const Subscribe = () => {
           </div>
         </div>
 
-        {/* Cheffy Cooking Only Section */}
         <div className="subscribe-cheffy-section">
           <div className="subscribe-cheffy-logo">
             <img src="/src/img/Chef.png" alt="Cheffy Logo" className="cheffy-logo" />

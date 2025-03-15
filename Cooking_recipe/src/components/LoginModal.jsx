@@ -16,7 +16,7 @@ const LoginModal = ({ onClose, onLoginSuccess }) => {
     e.preventDefault();
     if (email === 'theanhoxy123@gmail.com') {
       if (typeof onLoginSuccess === 'function') {
-        onLoginSuccess(); // Gọi hàm từ props để cập nhật trạng thái ở Header
+        onLoginSuccess(); 
       } else {
         console.error('onLoginSuccess is not a function');
       }
@@ -26,14 +26,13 @@ const LoginModal = ({ onClose, onLoginSuccess }) => {
   };
 
   return (
-    <div className="chefLoginModal-overlay" onClick={onClose}> {/* Sử dụng onClose thay vì handleCloseLoginModal */}
+    <div className="chefLoginModal-overlay" onClick={onClose}> 
       <div className="chefLoginModal-container" onClick={(e) => e.stopPropagation()}>
         {/* Close Button */}
         <button className="chefLoginModal-close-btn" onClick={onClose}>
           <IoClose size={24} />
         </button>
 
-        {/* Left Section: Image and Quote */}
         <div className="chefLoginModal-left">
           <img
             src="/src/img/Bcenter.png"
@@ -45,7 +44,7 @@ const LoginModal = ({ onClose, onLoginSuccess }) => {
           </div>
         </div>
 
-        {/* Right Section: Login Form */}
+        {/* Right: Login Form */}
         <div className="chefLoginModal-right">
           <h2 className="chefLoginModal-title">Login</h2>
           <p className="chefLoginModal-subtitle">Enter your email to log in.</p>
@@ -78,7 +77,7 @@ const LoginModal = ({ onClose, onLoginSuccess }) => {
             <a href="/privacy">Privacy Policy</a>.
           </p>
 
-          {/* Social Login Buttons */}
+          {/* Social Login */}
           <button className="chefLoginModal-social-btn chefLoginModal-google">
             <FcGoogle size={20} className="chefLoginModal-icon" />
             Continue with Google

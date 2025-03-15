@@ -7,32 +7,30 @@ const OnboardingModal = ({ onClose }) => {
 
   const slides = [
     {
-      image: '/src/img/skipp.png', // Thay bằng đường dẫn ảnh thực tế
+      image: '/src/img/skipp.png',
       title: 'Discover Cheffy',
       description: 'Easy and delicious cooking instructions right here. Start exploring now!',
     },
     {
-      image: '/src/img/skipp.png', // Ảnh thứ 2
+      image: '/src/img/skipp.png',
       title: 'Explore Recipes',
       description: 'Find thousands of recipes for every occasion and taste.',
     },
     {
-      image: '/src/img/skipp.png', // Ảnh thứ 3
+      image: '/src/img/skipp.png', 
       title: 'Get Inspired',
       description: 'Discover new ingredients and cooking techniques.',
     },
   ];
 
-  // Chuyển đến slide tiếp theo
   const handleNext = () => {
     if (currentSlide < slides.length - 1) {
       setCurrentSlide(currentSlide + 1);
     } else {
-      onClose(); // Đóng modal khi hết slide
+      onClose();
     }
   };
 
-  // Đóng modal khi nhấn Skip
   const handleSkip = () => {
     onClose();
   };

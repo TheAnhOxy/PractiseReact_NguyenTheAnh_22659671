@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Thêm Link từ react-router-dom
+import { Link } from 'react-router-dom'; 
 import Header_LoginSuc from './Header_LoginSuc';
 import { Range } from 'react-range';
 import '../index.css';
@@ -11,9 +11,8 @@ const YourRecipeBox = () => {
   const [isTimeOpen, setIsTimeOpen] = useState(true);
   const [isRatingOpen, setIsRatingOpen] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 8; // 2 hàng x 4 cột
+  const productsPerPage = 8; 
 
-  // Danh sách tên riêng cho 9 sản phẩm đầu tiên
   const customNames = [
     'Cucumber Salad with Cherry Tomatoes',
     'Italian-Style Tomato Salad',
@@ -26,13 +25,11 @@ const YourRecipeBox = () => {
     'Italian-Style Tomato Delight',
   ];
 
-  // Danh sách sản phẩm với 9 ảnh và tên riêng cho 9 sản phẩm đầu tiên
   const products = Array.from({ length: 99 }, (_, i) => {
     const index = i + 1;
     let image;
     let name;
 
-    // Gán ảnh và tên cho 9 sản phẩm đầu tiên
     if (index === 1) {
       image = '/src/img/cucumber_salad_charry_tomatoes.png';
       name = customNames[0];
@@ -61,7 +58,6 @@ const YourRecipeBox = () => {
       image = '/src/img/Italian-style tomato.png';
       name = customNames[8];
     } else {
-      // Các sản phẩm từ 10 trở đi: tên mặc định và ảnh mặc định
       image = '/src/img/foodf.png';
       name = `Salad ${index}`;
     }
@@ -89,7 +85,6 @@ const YourRecipeBox = () => {
       items.push(i);
     }
 
-    // Nếu có nhiều hơn 4 trang, thêm dấu "..." và trang cuối
     if (totalPages > 4) {
       if (currentPage < totalPages - 2) {
         items.push('...');

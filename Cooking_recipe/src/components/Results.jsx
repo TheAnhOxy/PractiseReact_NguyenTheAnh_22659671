@@ -8,9 +8,8 @@ const Results = ({ searchQuery }) => {
   const [isTimeOpen, setIsTimeOpen] = useState(true);
   const [isRatingOpen, setIsRatingOpen] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 9; // 3 dòng x 3 cột
+  const productsPerPage = 9; 
 
-  // Danh sách tên riêng cho 9 sản phẩm đầu tiên
   const customNames = [
     'Cucumber Salad with Cherry Tomatoes',
     'Italian-Style Tomato Salad',
@@ -23,13 +22,11 @@ const Results = ({ searchQuery }) => {
     'Italian-Style Tomato Delight',
   ];
 
-  // Danh sách sản phẩm với 9 ảnh và tên riêng cho 9 sản phẩm đầu tiên
   const products = Array.from({ length: 99 }, (_, i) => {
     const index = i + 1;
     let image;
     let name;
 
-    // Gán ảnh và tên cho 9 sản phẩm đầu tiên
     if (index === 1) {
       image = '/src/img/cucumber_salad_charry_tomatoes.png';
       name = customNames[0];
@@ -58,15 +55,14 @@ const Results = ({ searchQuery }) => {
       image = '/src/img/Italian-style tomato.png';
       name = customNames[8];
     } else {
-      // Các sản phẩm từ 10 trở đi: tên mặc định và ảnh mặc định
       image = '/src/img/foodf.png';
       name = `Salad ${index}`;
     }
 
     return {
-      name, // Tên tùy chỉnh hoặc mặc định
-      time: `${15 + (i % 15)} minutes`, // Thời gian thay đổi từ 15-30 phút
-      image, // Ảnh tùy chỉnh hoặc mặc định
+      name, 
+      time: `${15 + (i % 15)} minutes`, 
+      image, 
     };
   });
 
@@ -80,13 +76,11 @@ const Results = ({ searchQuery }) => {
   const getPaginationItems = () => {
     const items = [];
 
-    // Hiển thị các trang 1, 2, 3, 4
-    const maxInitialPages = Math.min(4, totalPages); // Hiển thị tối đa 4 trang đầu
+    const maxInitialPages = Math.min(4, totalPages); 
     for (let i = 1; i <= maxInitialPages; i++) {
       items.push(i);
     }
 
-    // Nếu có nhiều hơn 4 trang, thêm dấu "..." và trang cuối
     if (totalPages > 4) {
       if (currentPage < totalPages - 2) {
         items.push('...');

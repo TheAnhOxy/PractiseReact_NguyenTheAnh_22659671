@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import Link for navigation
+import { Link, useNavigate } from 'react-router-dom'; 
 import '../index.css';
 import '../Login.css';
 

@@ -1,12 +1,11 @@
-// src/components/CenterImage.jsx
+
 import React from 'react';
 import { Card, Button, Image } from 'react-bootstrap';
-import { FaArrowRight } from 'react-icons/fa'; // Icon mũi tên
+import { FaArrowRight } from 'react-icons/fa'; 
 import '../index.css';
-import '../RecipeSection.css'; // Import file CSS mới
+import '../RecipeSection.css'; 
 
 const CenterImage = () => {
-  // Danh sách các sản phẩm cho từng section
   const summerRecipes = [
     {
       image: '/src/img/salad_with_cabbage_and_shrimp.png',
@@ -140,7 +139,6 @@ const CenterImage = () => {
         </div>
       </div>
 
-      {/* Recipes With Videos Section */}
       <div className="rs-new-section-container">
         <h2 className="rs-new-section-title">Recipes With Videos</h2>
         <p className="rs-new-section-subtitle">Cooking Up Culinary Creations with Step-by-Step Videos</p>
@@ -157,7 +155,6 @@ const CenterImage = () => {
         </div>
       </div>
 
-      {/* Editor's Pick Section */}
       <div className="ep-section-container">
         <h2 className="ep-section-title">Editor's Pick</h2>
         <p className="ep-section-subtitle">Curated Culinary Delights: Handpicked Favorites by Our Expert Editors!</p>
